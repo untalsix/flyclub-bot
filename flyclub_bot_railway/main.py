@@ -7,8 +7,9 @@ import pytz
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, AIORateLimiter
 import nest_asyncio
+import os
 
-TOKEN = "7869557741:AAHMJ_XIoIHC8QOwCqFuRt3CdIJQwxPF9_E"
+TOKEN = os.getenv("7869557741:AAHMJ_XIoIHC8QOwCqFuRt3CdIJQwxPF9_E")
 
 def cargar_usuarios():
     try:
