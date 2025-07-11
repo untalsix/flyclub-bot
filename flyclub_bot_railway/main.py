@@ -8,7 +8,7 @@ from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, AIORateLimiter
 import nest_asyncio
 
-TOKEN = "AQUI_TU_TOKEN"
+TOKEN = "7869557741:AAHMJ_XIoIHC8QOwCqFuRt3CdIJQwxPF9_E"
 
 def cargar_usuarios():
     try:
