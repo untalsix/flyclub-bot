@@ -54,8 +54,13 @@ async def enviar_rutinas(context: ContextTypes.DEFAULT_TYPE):
             print(f"Error al enviar a {u['nombre']}: {e}")
 async def main():
     app = Application.builder().token(TOKEN).rate_limiter(AIORateLimiter()).build()
+  
     app.add_handler(CommandHandler("start", start))
-
+    app.add_handler(CommandHandler("start", start))
+    app.add_handler(CommandHandler("menu", menu))
+    app.add_handler(CommandHandler("rutina", rutina_manual))
+    app.add_handler(CommandHandler("perfil", perfil))
+    app.add_handler(CallbackQueryHandler(button_handler))
     hora = datetime.strptime("12:00", "%H:%M").time()
     app.job_queue.run_daily(enviar_rutinas, time=hora)
 
