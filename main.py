@@ -1,14 +1,14 @@
-
 import asyncio
 import json
 import random
+import os
 from datetime import datetime
 import pytz
 from telegram import Update
 from telegram.ext import Application, CommandHandler, ContextTypes, AIORateLimiter
 import nest_asyncio
 
-TOKEN = "AQUI_TU_TOKEN"
+TOKEN = os.getenv("TOKEN")
 
 def cargar_usuarios():
     try:
@@ -64,5 +64,6 @@ async def main():
     print("✅ Bot corriendo...")
     await app.run_polling()
 
+# 🚀 Ejecutamos el bot
 nest_asyncio.apply()
 asyncio.get_event_loop().run_until_complete(main())
