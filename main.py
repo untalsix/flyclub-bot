@@ -52,17 +52,16 @@ async def enviar_rutinas(context: ContextTypes.DEFAULT_TYPE):
             await context.bot.send_message(chat_id=u["chat_id"], text=msg, parse_mode="Markdown")
         except Exception as e:
             print(f"Error al enviar a {u['nombre']}: {e}")
-
 async def main():
     app = Application.builder().token(TOKEN).rate_limiter(AIORateLimiter()).build()
     app.add_handler(CommandHandler("start", start))
 
-hora = datetime.strptime("12:00", "%H:%M").time()
-app.job_queue.run_daily(enviar_rutinas, time=hora)
+    hora = datetime.strptime("12:00", "%H:%M").time()
+    app.job_queue.run_daily(enviar_rutinas, time=hora)
 
     print("✅ Bot corriendo...")
     await app.run_polling()
-
+    
 # 🚀 Ejecutamos el bot
 nest_asyncio.apply()
 asyncio.get_event_loop().run_until_complete(main())
