@@ -57,9 +57,8 @@ async def main():
     app = Application.builder().token(TOKEN).rate_limiter(AIORateLimiter()).build()
     app.add_handler(CommandHandler("start", start))
 
-    zona_mexico = pytz.timezone("America/Mexico_City")
-    hora = datetime.strptime("06:00", "%H:%M").time()
-    app.job_queue.run_daily(enviar_rutinas, time=hora, timezone=zona_mexico)
+hora = datetime.strptime("12:00", "%H:%M").time()
+app.job_queue.run_daily(enviar_rutinas, time=hora)
 
     print("✅ Bot corriendo...")
     await app.run_polling()
