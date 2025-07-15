@@ -1,30 +1,15 @@
-
 import asyncio
-
 import json
-
 import random
-
 from datetime import datetime
-
 import pytz
-
-
-
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-
 from telegram.ext import (
-
     Application,
-
     CommandHandler,
-
     CallbackQueryHandler,
-
     ContextTypes,
-
     AIORateLimiter
-
 )
 
 
@@ -195,15 +180,61 @@ def generar_rutina(usuario):
 
     frases = [
 
-        "🔥 La disciplina supera al talento.",
-
-        "🚀 Hoy es un buen día para darlo todo.",
-
-        "💪 Tú no paras, tú mejoras.",
-
-        "🎯 El cambio viene del compromiso.",
-
-        "🏁 Paso a paso, día a día. ¡Vamos!"
+    "🔥 La disciplina supera al talento.",
+    "🚀 Hoy es un buen día para darlo todo.",
+    "💪 Tú no paras, tú mejoras.",
+    "🎯 El cambio viene del compromiso.",
+    "🏁 Paso a paso, día a día. ¡Vamos!"
+    "🔥 Hoy también cuenta.",
+    "💪 Hazlo por ti.",
+    "🛑 No pares ahora.",
+    "📈 1% mejor cada día.",
+    "🚀 Sigue empujando.",
+    "🧠 La constancia gana.",
+    "😤 El cambio duele, pero vale.",
+    "🧘 Cuerpo en movimiento, mente en calma.",
+    "⏳ Disciplina > Motivación.",
+    "❌ Sin excusas, solo acción.",
+    "✊ Tú puedes con esto.",
+    "📆 Hoy sí, mañana también.",
+    "🌧️ Hazlo aunque no tengas ganas.",
+    "🥵 Lo difícil vale la pena.",
+    "👣 Cada paso cuenta.",
+    "⚡ Entrena duro, vive fácil.",
+    "🪞 Tú eres tu competencia.",
+    "🔁 No es magia, es hábito.",
+    "🧱 Ponte fuerte, no excusas.",
+    "🎯 Haz que cuente.",
+    "💥 Duele, pero sirve.",
+    "🐢 Sigue, aunque cueste.",
+    "🌬️ Respira y continúa.",
+    "🙏 Hoy entrenas, mañana agradeces.",
+    "🚧 Rompe tus límites.",
+    "🏋️ Más fuerte cada día.",
+    "🔨 Hazlo con todo.",
+    "📉 Menos excusas, más resultados.",
+    "🧬 Sé tu mejor versión.",
+    "👀 Tu esfuerzo se nota.",
+    "🏃 Corre, levanta, repite.",
+    "📅 Cada día cuenta.",
+    "✅ Hazlo valer.",
+    "💦 Suda con orgullo.",
+    "🚫 Nada te detiene.",
+    "🔊 Tu cuerpo te lo pide.",
+    "👟 Haz ruido con tus pasos.",
+    "💓 Movimiento es vida.",
+    "😮‍💨 Ríndete solo al cansancio.",
+    "☀️ Empieza, lo demás fluye.",
+    "🎧 Enfócate, entrena, crece.",
+    "🕹️ No te detengas.",
+    "🏆 Lo estás logrando.",
+    "💣 Haz que duela, luego que valga.",
+    "⏱️ Un día menos, una meta más cerca.",
+    "🧰 Hazlo fuerte, hazlo bien.",
+    "👑 Tú puedes, tú mandas.",
+    "🥇 El sudor es tu medalla.",
+    "🧭 Deja huella, no excusa.",
+    "🔁 Hoy te toca mejorar.",
 
     ]
 
@@ -219,7 +250,7 @@ def generar_rutina(usuario):
 
 
 
-🏋️‍♂️ *Tu rutina personalizada de hoy* 🏃‍♀️
+🏋️‍♂️ *Esto te toca hoy* 🏃‍♀️
 
 
 
@@ -237,7 +268,7 @@ def generar_rutina(usuario):
 
 
 
-¡A darle, {usuario['nombre']}! 💥"""
+¡Hazlo por ti, {usuario['nombre']}! 💥 ¿Estas list@? """
 
 
 
