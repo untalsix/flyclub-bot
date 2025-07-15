@@ -12,17 +12,9 @@ from telegram.ext import (
     AIORateLimiter
 )
 
-
-
 import nest_asyncio
 
-
-
 TOKEN = "7869557741:AAHMJ_XIoIHC8QOwCqFuRt3CdIJQwxPF9_E"
-
-
-
-
 
 def cargar_usuarios():
 
@@ -36,19 +28,11 @@ def cargar_usuarios():
 
         return []
 
-
-
-
-
 def guardar_usuarios(usuarios):
 
     with open("usuarios.json", "w") as f:
 
         json.dump(usuarios, f, indent=2)
-
-
-
-
 
 def generar_rutina(usuario):
 
@@ -64,7 +48,8 @@ def generar_rutina(usuario):
 
             "principiante": [
                 
-"""*Lunes - Pecho*
+            """*Lunes - Pecho*
+
 1️⃣ Press de pecho con mancuernas — 3x12  
 2️⃣ Aperturas con mancuernas — 3x15  
 3️⃣ Flexiones modificadas — 3x10  
@@ -284,19 +269,11 @@ def generar_rutina(usuario):
 
     frase = random.choice(frases)
 
-
-
     return f"""{frase}
-
-
 
 🏋️‍♂️ *Esto te toca hoy* 🏃‍♀️
 
-
-
 {rutina_dia}
-
-
 
 🍽️ Desayuno: {desayuno}
 
@@ -306,11 +283,7 @@ def generar_rutina(usuario):
 
 💧 Agua: {agua} litros
 
-
-
 ¡Hazlo por ti, {usuario['nombre']}! 💥 ¿Estas list@? """
-
-
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -325,8 +298,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"👋 Hola {nombre}, ya estás registrado.")
 
         return
-
-
 
     nuevo_usuario = {
 
@@ -346,8 +317,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     guardar_usuarios(usuarios)
 
-
-
     await update.message.reply_text(
 
         f"✅ ¡Bienvenido {nombre}!\nHas sido registrado con rutina *mixta*, nivel *principiante*.\nUsa /menu para configurar tu perfil.",
@@ -355,8 +324,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         parse_mode="Markdown"
 
     )
-
-
 
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -375,8 +342,6 @@ async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
     reply_markup = InlineKeyboardMarkup(keyboard)
 
     await update.message.reply_text("Selecciona qué quieres modificar o ver:", reply_markup=reply_markup)
-
-
 
 async def perfil(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -404,10 +369,6 @@ async def perfil(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(texto, parse_mode="Markdown")
 
-
-
-
-
 async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     query = update.callback_query
@@ -426,19 +387,13 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         return
 
-
-
     data = query.data
-
-
 
     if data == "menu_perfil":
 
         await perfil(update, context)
 
         return
-
-
 
     if data == "menu_nivel":
 
@@ -457,7 +412,6 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await query.edit_message_text("Selecciona tu nivel:", reply_markup=InlineKeyboardMarkup(keyboard))
 
         return
-
 
 
     if data == "menu_objetivo":
@@ -480,8 +434,6 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         return
 
-
-
     if data == "menu_tipo":
 
         keyboard = [
@@ -500,8 +452,6 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         return
 
-
-
     if data.startswith("nivel_"):
 
         usuario["nivel"] = data.split("_")[1]
@@ -511,8 +461,6 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await query.edit_message_text(f"✅ Nivel actualizado a *{usuario['nivel']}*.", parse_mode="Markdown")
 
         return
-
-
 
     if data.startswith("objetivo_"):
 
@@ -524,8 +472,6 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         return
 
-
-
     if data.startswith("tipo_"):
 
         usuario["rutina_tipo"] = data.split("_")[1]
@@ -536,15 +482,11 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         return
 
-
-
     if data == "menu":
 
         await menu(update, context)
 
         return
-
-
 
 async def enviar_rutinas(context: ContextTypes.DEFAULT_TYPE):
 
@@ -564,8 +506,6 @@ async def enviar_rutinas(context: ContextTypes.DEFAULT_TYPE):
 
             print(f"❌ Error enviando a {usuario['nombre']}: {e}")
 
-
-
 async def rutina_manual(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     chat_id = update.effective_chat.id
@@ -584,13 +524,9 @@ async def rutina_manual(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(mensaje, parse_mode="Markdown")
 
-
-
 async def main():
 
     app = Application.builder().token(TOKEN).rate_limiter(AIORateLimiter()).build()
-
-
 
     app.add_handler(CommandHandler("start", start))
 
@@ -602,19 +538,13 @@ async def main():
 
     app.add_handler(CallbackQueryHandler(button_handler))
 
-
-
     hora = datetime.strptime("12:00", "%H:%M").time()  # 12:00 UTC ≈ 6:00 a.m. México
 
     app.job_queue.run_daily(enviar_rutinas, time=hora)
 
-
-
     print("✅ Bot corriendo...")
 
     await app.run_polling()
-
-
 
 nest_asyncio.apply()
 
