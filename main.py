@@ -63,10 +63,50 @@ def generar_rutina(usuario):
         "gym": {
 
             "principiante": [
+                
+"""*Lunes - Pecho*
+1️⃣ Press de pecho con mancuernas — 3x12  
+2️⃣ Aperturas con mancuernas — 3x15  
+3️⃣ Flexiones modificadas — 3x10  
+⏱️ Descanso: 45 segundos entre series""",
 
-                "Circuito full body 3x15: sentadilla, lagartija, abdominales",
+            """*Martes - Espalda*
+1️⃣ Remo con banda elástica — 3x15  
+2️⃣ Peso muerto con mancuerna ligera — 3x12  
+3️⃣ Superman en el suelo — 3x20 seg  
+⏱️ Descanso: 45 segundos entre ejercicios""",
 
-                "Entrenamiento con mancuernas: 3x10 (bíceps, tríceps, hombros)"
+            """*Miércoles - Piernas*
+1️⃣ Sentadillas — 4x12  
+2️⃣ Desplantes hacia atrás — 3x10 por pierna  
+3️⃣ Puente de glúteo — 3x15  
+⏱️ Descanso: 60 segundos entre series""",
+
+            """*Jueves - Core / Abdomen*
+1️⃣ Crunch clásico — 3x20  
+2️⃣ Plancha — 3x30 segundos  
+3️⃣ Elevaciones de piernas — 3x15  
+⏱️ Descanso: 30 segundos entre ejercicios""",
+
+            """*Viernes - Brazos*
+1️⃣ Curl de bíceps con botellas — 3x12  
+2️⃣ Fondos en silla (tríceps) — 3x10  
+3️⃣ Curl martillo — 3x10  
+⏱️ Descanso: 45 segundos entre series""",
+
+            """*Sábado - Hombros*
+1️⃣ Elevaciones frontales — 3x12  
+2️⃣ Elevaciones laterales — 3x12  
+3️⃣ Press militar con mancuernas — 3x10  
+⏱️ Descanso: 45 segundos entre series""",
+
+            """*Domingo - Full Body*
+1️⃣ Circuito: 30 seg cada ejercicio (3 vueltas):  
+- Sentadilla  
+- Jumping jacks  
+- Plancha  
+- Lagartijas en rodillas  
+⏱️ Descanso: 1 min entre circuitos"""
 
             ],
 
