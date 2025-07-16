@@ -257,7 +257,6 @@ async def rutina_manual(update: Update, context: ContextTypes.DEFAULT_TYPE):
     mensaje = generar_rutina(usuario)
     await update.message.reply_text(mensaje, parse_mode="Markdown")
 
-# 🚀 PUNTO DE ENTRADA
 async def main():
     app = Application.builder().token(TOKEN).rate_limiter(AIORateLimiter()).build()
 
