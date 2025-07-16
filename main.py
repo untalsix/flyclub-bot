@@ -260,7 +260,7 @@ def generar_rutina(usuario):
 
 
 
-¡A darle, {usuario['nombre']}! 💥"""
+¡A darle, {usuario['nombre']}! ¿Estas List@? 💥"""
 
 
 
