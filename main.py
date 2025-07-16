@@ -143,8 +143,9 @@ Recomendado:
             "avanzado": {
 
 rutinas_gym_avanzado = {
-    "lunes": """💥 *Pecho + Tríceps*
-1. Press banca con barra – 5x8  
+    
+"lunes": """💥 *Pecho + Tríceps*
+        
 1. Press banca plano – 5x8 
 2. Press inclinado con mancuernas – 4x10  
 3. Aperturas en polea – 4x12  
@@ -200,12 +201,11 @@ rutinas_gym_avanzado = {
 – Estiramientos suaves  
 – Hidratación y buena alimentación  
 ⏱️ *Tu cuerpo también entrena descansando*"""
-                
-        }]
-        },
-        "running": {
+         },
+        
+    "running": {
            
-            "principiante": {
+  "principiante": {
                
 "lunes": """🏃‍♂️ *Easy Run + Técnica*
 
@@ -390,11 +390,11 @@ rutinas_gym_avanzado = {
   - Estiramientos activos (piernas, cadera, espalda)  
   - Respiración y relajación  
 🧘 Día para recuperar cuerpo y mente"""
-            }
-        },
+             },
+      
         "mixto": {
             
-            "principiante": {
+      "principiante": {
                 
 "lunes": """🏃‍♂️ *Cardio Suave + Core Básico*
 
