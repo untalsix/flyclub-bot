@@ -90,8 +90,6 @@ def generar_rutina(usuario):
 - Lagartijas en rodillas  
 ⏱️ Descanso: 1 min entre circuitos"""
         ],
-    }
-}
 
             "intermedio": [
 
