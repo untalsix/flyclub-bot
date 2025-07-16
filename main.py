@@ -35,10 +35,115 @@ def guardar_usuarios(usuarios):
         json.dump(usuarios, f, indent=2)
 
 def generar_rutina(usuario):
-
     nivel = usuario['nivel']
-
     tipo = usuario['rutina_tipo']
+  
+    zona = pytz.timezone("America/Mexico_City")
+    dia_actual = datetime.now(zona).strftime('%A').lower()  # ejemplo: 'monday'
+    dias_semana = {
+        'monday': 'lunes',
+        'tuesday': 'martes',
+        'wednesday': 'miércoles',
+        'thursday': 'jueves',
+        'friday': 'viernes',
+        'saturday': 'sábado',
+        'sunday': 'domingo'
+    }
+    dia = dias_semana[dia_actual]
+
+    rutina_dia = rutinas[tipo][nivel][dia]
+
+    desayuno = random.choice([
+        "Avena con fruta y almendras",
+        "Tostadas con huevo y aguacate",
+        "Smoothie de proteína y avena"
+    ])
+
+    comida = random.choice([
+        "Pollo con arroz integral y brócoli",
+        "Carne magra con camote y ensalada",
+        "Pasta integral con atún y espinacas"
+    ])
+
+    cena = random.choice([
+        "Ensalada con huevo y semillas",
+        "Wrap integral con atún",
+        "Yogur con frutas y avena"
+    ])
+
+    frases = [  # ya las tienes bien
+        "🔥 La disciplina supera al talento.",
+        "🚀 Hoy es un buen día para darlo todo.",
+        "💪 Tú no paras, tú mejoras.",
+        "🎯 El cambio viene del compromiso.",
+        "🏁 Paso a paso, día a día. ¡Vamos!",
+        "🔥 Hoy también cuenta.",
+        "💪 Hazlo por ti.",
+        "🛑 No pares ahora.",
+        "📈 1% mejor cada día.",
+        "🚀 Sigue empujando.",
+        "🧠 La constancia gana.",
+        "😤 El cambio duele, pero vale.",
+        "🧘 Cuerpo en movimiento, mente en calma.",
+        "⏳ Disciplina > Motivación.",
+        "❌ Sin excusas, solo acción.",
+        "✊ Tú puedes con esto.",
+        "📆 Hoy sí, mañana también.",
+        "🌧️ Hazlo aunque no tengas ganas.",
+        "🥵 Lo difícil vale la pena.",
+        "👣 Cada paso cuenta.",
+        "⚡ Entrena duro, vive fácil.",
+        "🪞 Tú eres tu competencia.",
+        "🔁 No es magia, es hábito.",
+        "🧱 Ponte fuerte, no excusas.",
+        "🎯 Haz que cuente.",
+        "💥 Duele, pero sirve.",
+        "🐢 Sigue, aunque cueste.",
+        "🌬️ Respira y continúa.",
+        "🙏 Hoy entrenas, mañana agradeces.",
+        "🚧 Rompe tus límites.",
+        "🏋️ Más fuerte cada día.",
+        "🔨 Hazlo con todo.",
+        "📉 Menos excusas, más resultados.",
+        "🧬 Sé tu mejor versión.",
+        "👀 Tu esfuerzo se nota.",
+        "🏃 Corre, levanta, repite.",
+        "📅 Cada día cuenta.",
+        "✅ Hazlo valer.",
+        "💦 Suda con orgullo.",
+        "🚫 Nada te detiene.",
+        "🔊 Tu cuerpo te lo pide.",
+        "👟 Haz ruido con tus pasos.",
+        "💓 Movimiento es vida.",
+        "😮‍💨 Ríndete solo al cansancio.",
+        "☀️ Empieza, lo demás fluye.",
+        "🎧 Enfócate, entrena, crece.",
+        "🕹️ No te detengas.",
+        "🏆 Lo estás logrando.",
+        "💣 Haz que duela, luego que valga.",
+        "⏱️ Un día menos, una meta más cerca.",
+        "🧰 Hazlo fuerte, hazlo bien.",
+        "👑 Tú puedes, tú mandas.",
+        "🥇 El sudor es tu medalla.",
+        "🧭 Deja huella, no excusa.",
+        "🔁 Hoy te toca mejorar.",
+    ]
+
+    agua = round(random.uniform(2.0, 3.5), 1)
+    frase = random.choice(frases)
+
+    return f"""{frase}
+
+🏋️‍♂️ *Esto te toca hoy ({dia.title()})* 🏃‍♀️
+
+{rutina_dia}
+
+🍽️ Desayuno: {desayuno}
+🍛 Comida: {comida}
+🌙 Cena: {cena}
+💧 Agua: {agua} litros
+
+¡Hazlo por ti, {usuario['nombre']}! 💥 ¿Estás list@?"""
 
 
 
