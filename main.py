@@ -29,12 +29,11 @@ def cargar_usuarios():
         return []
 
 def guardar_usuarios(usuarios):
-
     with open("usuarios.json", "w") as f:
-
         json.dump(usuarios, f, indent=2)
 
-    def generar_rutina(usuario):
+
+def generar_rutina(usuario):
     nivel = usuario['nivel']
     tipo = usuario['rutina_tipo']
 
