@@ -232,7 +232,7 @@ def generar_rutina(usuario):
 
 
 
-🏋️‍♂️ *Tu rutina personalizada de hoy* 🏃‍♀️
+🏋️‍♂️ *Esto te toca hoy* 🏃‍♀️
 
 
 
@@ -250,7 +250,7 @@ def generar_rutina(usuario):
 
 
 
-¡A darle, {usuario['nombre']}! 💥"""
+¡Es tu momento! 🌟 {usuario['nombre']}! ¿Estas list@? 💥"""
 
 
 
