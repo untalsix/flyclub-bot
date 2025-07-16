@@ -1,21 +1,42 @@
 import asyncio
+
 import json
+
 import random
+
 from datetime import datetime
+
 import pytz
+
+
+
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
+
 from telegram.ext import (
+
     Application,
+
     CommandHandler,
+
     CallbackQueryHandler,
+
     ContextTypes,
+
     AIORateLimiter
 
 )
 
+
+
 import nest_asyncio
 
+
+
 TOKEN = "7869557741:AAHMJ_XIoIHC8QOwCqFuRt3CdIJQwxPF9_E"
+
+
+
+
 
 def cargar_usuarios():
 
@@ -29,11 +50,19 @@ def cargar_usuarios():
 
         return []
 
+
+
+
+
 def guardar_usuarios(usuarios):
 
     with open("usuarios.json", "w") as f:
 
         json.dump(usuarios, f, indent=2)
+
+
+
+
 
 def generar_rutina(usuario):
 
@@ -41,57 +70,19 @@ def generar_rutina(usuario):
 
     tipo = usuario['rutina_tipo']
 
+
+
     rutinas = {
 
-                "gym": {
-       
-                    "principiante": {
-            
-                        """*Lunes - Pecho*
+        "gym": {
 
-1️⃣ Press de pecho con mancuernas — 3x12  
-2️⃣ Aperturas con mancuernas — 3x15  
-3️⃣ Flexiones modificadas — 3x10  
-⏱️ Descanso: 45 segundos entre series""",
+            "principiante": [
 
-            """*Martes - Espalda*
-1️⃣ Remo con banda elástica — 3x15  
-2️⃣ Peso muerto con mancuerna ligera — 3x12  
-3️⃣ Superman en el suelo — 3x20 seg  
-⏱️ Descanso: 45 segundos entre ejercicios""",
+                "Circuito full body 3x15: sentadilla, lagartija, abdominales",
 
-            """*Miércoles - Piernas*
-1️⃣ Sentadillas — 4x12  
-2️⃣ Desplantes hacia atrás — 3x10 por pierna  
-3️⃣ Puente de glúteo — 3x15  
-⏱️ Descanso: 60 segundos entre series""",
+                "Entrenamiento con mancuernas: 3x10 (bíceps, tríceps, hombros)"
 
-            """*Jueves - Core / Abdomen*
-1️⃣ Crunch clásico — 3x20  
-2️⃣ Plancha — 3x30 segundos  
-3️⃣ Elevaciones de piernas — 3x15  
-⏱️ Descanso: 30 segundos entre ejercicios""",
-
-            """*Viernes - Brazos*
-1️⃣ Curl de bíceps con botellas — 3x12  
-2️⃣ Fondos en silla (tríceps) — 3x10  
-3️⃣ Curl martillo — 3x10  
-⏱️ Descanso: 45 segundos entre series""",
-
-            """*Sábado - Hombros*
-1️⃣ Elevaciones frontales — 3x12  
-2️⃣ Elevaciones laterales — 3x12  
-3️⃣ Press militar con mancuernas — 3x10  
-⏱️ Descanso: 45 segundos entre series""",
-
-            """*Domingo - Full Body*
-1️⃣ Circuito: 30 seg cada ejercicio (3 vueltas):  
-- Sentadilla  
-- Jumping jacks  
-- Plancha  
-- Lagartijas en rodillas  
-⏱️ Descanso: 1 min entre circuitos"""
-        ],
+            ],
 
             "intermedio": [
 
@@ -170,6 +161,7 @@ def generar_rutina(usuario):
     }
 
 
+
     desayuno = random.choice([
 
         "Avena con fruta y almendras",
@@ -201,62 +193,16 @@ def generar_rutina(usuario):
     ])
 
     frases = [
-    
-    "🔥 Hoy también cuenta.",
-    "💪 Hazlo por ti.",
-    "🛑 No pares ahora.",
-    "📈 1% mejor cada día.",
-    "🚀 Sigue empujando.",
-    "🧠 La constancia gana.",
-    "😤 El cambio duele, pero vale.",
-    "🧘 Cuerpo en movimiento, mente en calma.",
-    "⏳ Disciplina > Motivación.",
-    "❌ Sin excusas, solo acción.",
-    "✊ Tú puedes con esto.",
-    "📆 Hoy sí, mañana también.",
-    "🌧️ Hazlo aunque no tengas ganas.",
-    "🥵 Lo difícil vale la pena.",
-    "👣 Cada paso cuenta.",
-    "⚡ Entrena duro, vive fácil.",
-    "🪞 Tú eres tu competencia.",
-    "🔁 No es magia, es hábito.",
-    "🧱 Ponte fuerte, no excusas.",
-    "🎯 Haz que cuente.",
-    "💥 Duele, pero sirve.",
-    "🐢 Sigue, aunque cueste.",
-    "🌬️ Respira y continúa.",
-    "🙏 Hoy entrenas, mañana agradeces.",
-    "🚧 Rompe tus límites.",
-    "🏋️ Más fuerte cada día.",
-    "🔨 Hazlo con todo.",
-    "📉 Menos excusas, más resultados.",
-    "🧬 Sé tu mejor versión.",
-    "👀 Tu esfuerzo se nota.",
-    "🏃 Corre, levanta, repite.",
-    "📅 Cada día cuenta.",
-    "✅ Hazlo valer.",
-    "💦 Suda con orgullo.",
-    "🚫 Nada te detiene.",
-    "🔊 Tu cuerpo te lo pide.",
-    "👟 Haz ruido con tus pasos.",
-    "💓 Movimiento es vida.",
-    "😮‍💨 Ríndete solo al cansancio.",
-    "☀️ Empieza, lo demás fluye.",
-    "🎧 Enfócate, entrena, crece.",
-    "🕹️ No te detengas.",
-    "🏆 Lo estás logrando.",
-    "💣 Haz que duela, luego que valga.",
-    "⏱️ Un día menos, una meta más cerca.",
-    "🧰 Hazlo fuerte, hazlo bien.",
-    "👑 Tú puedes, tú mandas.",
-    "🥇 El sudor es tu medalla.",
-    "🧭 Deja huella, no excusa.",
-    "🔁 Hoy te toca mejorar."
-    "🔥 La disciplina supera al talento.",
-    "🚀 Hoy es un buen día para darlo todo.",
-    "💪 Tú no paras, tú mejoras.",
-    "🎯 El cambio viene del compromiso.",
-    "🏁 Paso a paso, día a día. ¡Vamos!"
+
+        "🔥 La disciplina supera al talento.",
+
+        "🚀 Hoy es un buen día para darlo todo.",
+
+        "💪 Tú no paras, tú mejoras.",
+
+        "🎯 El cambio viene del compromiso.",
+
+        "🏁 Paso a paso, día a día. ¡Vamos!"
 
     ]
 
@@ -272,7 +218,7 @@ def generar_rutina(usuario):
 
 
 
-🏋️‍♂️ *Esto te toca hoy* 🏃‍♀️
+🏋️‍♂️ *Tu rutina personalizada de hoy* 🏃‍♀️
 
 
 
@@ -290,7 +236,7 @@ def generar_rutina(usuario):
 
 
 
-¡Es tu momento! 🌟 {usuario['nombre']}! ¿Estas list@? 💥"""
+¡A darle, {usuario['nombre']}! 💥"""
 
 
 
@@ -307,6 +253,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f"👋 Hola {nombre}, ya estás registrado.")
 
         return
+
+
 
     nuevo_usuario = {
 
@@ -326,6 +274,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     guardar_usuarios(usuarios)
 
+
+
     await update.message.reply_text(
 
         f"✅ ¡Bienvenido {nombre}!\nHas sido registrado con rutina *mixta*, nivel *principiante*.\nUsa /menu para configurar tu perfil.",
@@ -333,6 +283,8 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         parse_mode="Markdown"
 
     )
+
+
 
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -380,6 +332,10 @@ async def perfil(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(texto, parse_mode="Markdown")
 
+
+
+
+
 async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     query = update.callback_query
@@ -398,13 +354,19 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         return
 
+
+
     data = query.data
+
+
 
     if data == "menu_perfil":
 
         await perfil(update, context)
 
         return
+
+
 
     if data == "menu_nivel":
 
@@ -579,6 +541,7 @@ async def main():
     print("✅ Bot corriendo...")
 
     await app.run_polling()
+
 
 if __name__ == "__main__":
     import nest_asyncio
