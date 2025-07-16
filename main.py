@@ -140,7 +140,7 @@ Recomendado:
     
             ],
            
-            "avanzado": [
+            "avanzado": {
 
 "lunes": """🔥 *Pecho + Tríceps (Hipertrofia)*
 
