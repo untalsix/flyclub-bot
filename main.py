@@ -34,7 +34,7 @@ def generar_rutina(usuario):
        
         "gym": {
           
-            "principiante": [
+            "principiante": {
               
  """*Lunes - Pecho*
 
@@ -80,9 +80,9 @@ def generar_rutina(usuario):
 - Plancha  
 - Lagartijas en rodillas  
 ⏱️ Descanso: 1 min entre circuitos"""
-            ],
+        },
            
-            "intermedio": [
+            "intermedio": {
   
 "lunes": """💥 *Pecho + Tríceps*
 
@@ -138,7 +138,7 @@ Recomendado:
 – Estiramientos suaves  
 – Paseo relajado o movilidad"""
     
-            ],
+            },
            
             "avanzado": {
 
@@ -201,11 +201,11 @@ rutinas_gym_avanzado = {
 – Hidratación y buena alimentación  
 ⏱️ *Tu cuerpo también entrena descansando*"""
                 
-            ]
+        }]
         },
         "running": {
            
-            "principiante": [
+            "principiante": {
                
 "lunes": """🏃‍♂️ *Easy Run + Técnica*
 
@@ -265,9 +265,9 @@ rutinas_gym_avanzado = {
 - Estiramientos estáticos (piernas, espalda baja, glúteos)  
 - Respiración profunda y relajación  
 😌 Cuerpo y mente también necesitan recuperación"""
-            ],
+            },
            
-            "intermedio": [
+            "intermedio": {
               
 "lunes": """🏃‍♂️ *Easy Run + Técnica*
 
@@ -327,9 +327,9 @@ rutinas_gym_avanzado = {
 - Estiramientos estáticos (5-10 min)  
 - Movilidad de tobillos, cadera y espalda  
 😌 Día de recuperación activa"""
-            ],
+            },
             
-            "avanzado": [
+            "avanzado": {
                
 "lunes": """💨 *Series en pista (velocidad)*
 
@@ -390,11 +390,11 @@ rutinas_gym_avanzado = {
   - Estiramientos activos (piernas, cadera, espalda)  
   - Respiración y relajación  
 🧘 Día para recuperar cuerpo y mente"""
-            ]
+            }
         },
         "mixto": {
             
-            "principiante": [
+            "principiante": {
                 
 "lunes": """🏃‍♂️ *Cardio Suave + Core Básico*
 
@@ -457,9 +457,9 @@ Opciones:
 - Yoga suave o estiramientos  
 
 🎯 Escucha tu cuerpo, hidrátate bien y relájate""",
-            ],
+            },
            
-            "intermedio": [
+            "intermedio": {
             
 "lunes": """🏋️ *Full Body + Core*
 
@@ -521,9 +521,9 @@ Opciones:
 – Yoga guiado (15-20 min)  
 – Estiramientos + movilidad  
 🎯 Soltar el cuerpo, evitar sobrecargas""",
-            ],
+            },
            
-            "avanzado": [
+            "avanzado": {
 
 "lunes": """🔥 *Lunes – Tren Superior + Series Cortas*
 
@@ -596,7 +596,7 @@ Duración total: ~25 min""",
 🚶 Caminata ligera o yoga – 30-40 min  
 💨 Respiración, movilidad y foam roller  
 *Consejo:* Hidratación + preparación semana próxima""",
-            ]
+            }
         }
     }
 
