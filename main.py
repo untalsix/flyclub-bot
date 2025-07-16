@@ -34,10 +34,10 @@ def guardar_usuarios(usuarios):
 
         json.dump(usuarios, f, indent=2)
 
-def generar_rutina(usuario):
+    def generar_rutina(usuario):
     nivel = usuario['nivel']
     tipo = usuario['rutina_tipo']
-  
+
     zona = pytz.timezone("America/Mexico_City")
     dia_actual = datetime.now(zona).strftime('%A').lower()
     dias_semana = {
