@@ -95,7 +95,7 @@ def generar_rutina(usuario):
 
             ],
 
-            "intermedio": [
+            "intermedio": {
 
 "lunes": """💥 *Pecho + Tríceps*
 
@@ -154,7 +154,7 @@ Recomendado:
 
             ],
 
-            "avanzado": [
+            "avanzado": {
                 
 "lunes": """🔥 *Pecho + Tríceps (Hipertrofia)*
 
