@@ -39,7 +39,7 @@ def generar_rutina(usuario):
     tipo = usuario['rutina_tipo']
   
     zona = pytz.timezone("America/Mexico_City")
-    dia_actual = datetime.now(zona).strftime('%A').lower()  # ejemplo: 'monday'
+    dia_actual = datetime.now(zona).strftime('%A').lower()
     dias_semana = {
         'monday': 'lunes',
         'tuesday': 'martes',
