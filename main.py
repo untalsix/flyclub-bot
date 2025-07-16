@@ -52,7 +52,8 @@ def guardar_usuarios(usuarios):
     dia = dias_semana[dia_actual]
 
     rutina_dia = rutinas[tipo][nivel][dia]
-
+    return rutina_dia
+   
     desayuno = random.choice([
         "Avena con fruta y almendras",
         "Tostadas con huevo y aguacate",
