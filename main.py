@@ -46,7 +46,7 @@ def generar_rutina(usuario):
 
         "gym": {
 
-            "principiante": [
+            "principiante": {
                 
             """*Lunes - Pecho*
 
@@ -93,7 +93,7 @@ def generar_rutina(usuario):
 - Lagartijas en rodillas  
 ⏱️ Descanso: 1 min entre circuitos"""
 
-            ],
+        },
 
             "intermedio": {
 
@@ -152,7 +152,7 @@ Recomendado:
 – Paseo relajado o movilidad"""
 }
 
-            ],
+            },
 
             "avanzado": {
                 
@@ -215,13 +215,13 @@ Recomendado:
 ⏱️ *Tu cuerpo también entrena descansando*"""
 }
 
-            ]
+            }
 
         },
 
         "running": {
 
-            "principiante": [
+            "principiante": {
 
 "lunes": """🏃‍♂️ *Easy Run + Técnica*
 
@@ -283,9 +283,9 @@ Recomendado:
 😌 Cuerpo y mente también necesitan recuperación"""
 }
 
-            ],
+            },
 
-            "intermedio": [
+            "intermedio": {
 
 "lunes": """🏃‍♂️ *Easy Run + Técnica*
 
@@ -347,9 +347,9 @@ Recomendado:
 😌 Día de recuperación activa"""
 }
 
-            ],
+        },
 
-            "avanzado": [
+            "avanzado": {
 
 "lunes": """💨 *Series en pista (velocidad)*
 
@@ -412,13 +412,13 @@ Recomendado:
 🧘 Día para recuperar cuerpo y mente"""
 }
 
-            ]
+            }
 
         },
 
         "mixto": {
 
-            "principiante": [
+            "principiante": {
 
 "lunes": """🏃‍♂️ *Cardio Suave + Core Básico*
 
@@ -483,9 +483,9 @@ Opciones:
 🎯 Escucha tu cuerpo, hidrátate bien y relájate""",
 }
 
-            ],
+            },
 
-            "intermedio": [
+            "intermedio": {
 
 "lunes": """🏋️ *Full Body + Core*
 
@@ -549,15 +549,15 @@ Opciones:
 🎯 Soltar el cuerpo, evitar sobrecargas""",
 }
 
-            ],
+        },
 
-            "avanzado": [
+            "avanzado": {
 
                 "5 km + tren superior en gimnasio",
 
                 "Entreno cruzado: HIIT + escaleras + core"
 
-            ]
+            }
 
         }
 
