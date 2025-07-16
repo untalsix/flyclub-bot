@@ -731,31 +731,17 @@ async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text("Selecciona qué quieres modificar o ver:", reply_markup=reply_markup)
 
-async def perfil(update: Update, context: ContextTypes.DEFAULT_TYPE):
-
+async def rutina_manual(update: Update, context: ContextTypes.DEFAULT_TYPE):
     chat_id = update.effective_chat.id
-
     usuarios = cargar_usuarios()
-
     usuario = next((u for u in usuarios if u["chat_id"] == chat_id), None)
 
     if not usuario:
-
         await update.message.reply_text("❌ No estás registrado. Usa /start primero.")
-
         return
 
-    texto = (f"📋 *Tu perfil actual:*\n\n"
-
-             f"👤 Nombre: {usuario['nombre']}\n"
-
-             f"🎯 Objetivo: *{usuario['objetivo']}*\n"
-
-             f"📈 Nivel: *{usuario['nivel']}*\n"
-
-             f"🏋️ Tipo de rutina: *{usuario['rutina_tipo']}*")
-
-    await update.message.reply_text(texto, parse_mode="Markdown")
+    mensaje = generar_rutina(usuario)
+    await update.message.reply_text(mensaje, parse_mode="Markdown")
 
 async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -934,6 +920,11 @@ async def main():
 
     await app.run_polling()
 
+if __name__ == "__main__":
+    import nest_asyncio
+    nest_asyncio.apply()
+    asyncio.run(main())
+    
 nest_asyncio.apply()
 
 asyncio.get_event_loop().run_until_complete(main())
