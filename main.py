@@ -8,8 +8,6 @@ from datetime import datetime
 
 import pytz
 
-
-
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 
 from telegram.ext import (
@@ -26,16 +24,9 @@ from telegram.ext import (
 
 )
 
-
-
 import nest_asyncio
 
-
-
 TOKEN = "7869557741:AAHMJ_XIoIHC8QOwCqFuRt3CdIJQwxPF9_E"
-
-
-
 
 
 def cargar_usuarios():
@@ -50,27 +41,17 @@ def cargar_usuarios():
 
         return []
 
-
-
-
-
 def guardar_usuarios(usuarios):
 
     with open("usuarios.json", "w") as f:
 
         json.dump(usuarios, f, indent=2)
 
-
-
-
-
 def generar_rutina(usuario):
 
     nivel = usuario['nivel']
 
     tipo = usuario['rutina_tipo']
-
-
 
     rutinas = {
 
@@ -159,7 +140,6 @@ def generar_rutina(usuario):
         }
 
     }
-
 
 
     desayuno = random.choice([
@@ -254,8 +234,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         return
 
-
-
     nuevo_usuario = {
 
         "nombre": nombre,
@@ -274,8 +252,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     guardar_usuarios(usuarios)
 
-
-
     await update.message.reply_text(
 
         f"✅ ¡Bienvenido {nombre}!\nHas sido registrado con rutina *mixta*, nivel *principiante*.\nUsa /menu para configurar tu perfil.",
@@ -283,8 +259,6 @@ async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
         parse_mode="Markdown"
 
     )
-
-
 
 async def menu(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
@@ -332,10 +306,6 @@ async def perfil(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     await update.message.reply_text(texto, parse_mode="Markdown")
 
-
-
-
-
 async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
     query = update.callback_query
@@ -354,19 +324,13 @@ async def button_handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
         return
 
-
-
     data = query.data
-
-
 
     if data == "menu_perfil":
 
         await perfil(update, context)
 
         return
-
-
 
     if data == "menu_nivel":
 
