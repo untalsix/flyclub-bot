@@ -142,9 +142,10 @@ Recomendado:
            
             "avanzado": {
 
-"lunes": """🔥 *Pecho + Tríceps (Hipertrofia)*
-
+rutinas_gym_avanzado = {
+    "lunes": """💥 *Pecho + Tríceps*
 1. Press banca con barra – 5x8  
+1. Press banca plano – 5x8 
 2. Press inclinado con mancuernas – 4x10  
 3. Aperturas en polea – 4x12  
 4. Fondos lastrados – 3x8  
