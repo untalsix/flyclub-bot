@@ -1,42 +1,21 @@
 import asyncio
-
 import json
-
 import random
-
 from datetime import datetime
-
 import pytz
-
-
-
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
-
 from telegram.ext import (
-
     Application,
-
     CommandHandler,
-
     CallbackQueryHandler,
-
     ContextTypes,
-
     AIORateLimiter
 
 )
 
-
-
 import nest_asyncio
 
-
-
 TOKEN = "7869557741:AAHMJ_XIoIHC8QOwCqFuRt3CdIJQwxPF9_E"
-
-
-
-
 
 def cargar_usuarios():
 
