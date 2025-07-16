@@ -11,8 +11,6 @@ from telegram.ext import (
     AIORateLimiter
 )
 
-import nest_asyncio
-
 TOKEN = "7869557741:AAHMJ_XIoIHC8QOwCqFuRt3CdIJQwxPF9_E"
 
 def cargar_usuarios():
