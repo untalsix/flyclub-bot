@@ -141,8 +141,6 @@ Recomendado:
             },
            
             "avanzado": {
-
-rutinas_gym_avanzado = {
     
 "lunes": """💥 *Pecho + Tríceps*
         
