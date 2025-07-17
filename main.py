@@ -107,7 +107,7 @@ def generar_rutina(usuario):
             "intermedio": [
                 
 
-"lunes": """💥 *Pecho + Tríceps*
+"lunes" """💥 *Pecho + Tríceps*
 
 1. Press banca plano – 4x10  
 2. Aperturas con mancuernas – 4x12  
@@ -115,7 +115,7 @@ def generar_rutina(usuario):
 4. Press cerrado – 3x10  
 ⏱️ *Descanso:* 60-90 seg""",
 
-    "martes": """🦵 *Piernas*
+ "martes" """🦵 *Piernas*
 
 1. Sentadilla con barra – 4x10  
 2. Prensa de piernas – 4x12  
@@ -123,7 +123,7 @@ def generar_rutina(usuario):
 4. Elevación de talones – 4x20  
 ⏱️ *Descanso:* 60 seg""",
 
-    "miércoles": """🏃‍♂️ *Cardio + Core*
+"miércoles" """🏃‍♂️ *Cardio + Core*
 
 1. Bicicleta o caminadora – 10 min  
 2. Crunch abdominal – 4x20  
@@ -131,7 +131,7 @@ def generar_rutina(usuario):
 4. Elevación de piernas – 4x15  
 ⏱️ *Descanso:* 30-45 seg""",
 
-    "jueves": """💪 *Espalda + Bíceps*
+ "jueves" """💪 *Espalda + Bíceps*
 
 1. Jalón al pecho – 4x10  
 2. Remo con barra – 4x12  
@@ -139,7 +139,7 @@ def generar_rutina(usuario):
 4. Curl martillo – 3x10  
 ⏱️ *Descanso:* 60-90 seg""",
 
-    "viernes": """🔥 *Full Body Funcional*
+"viernes" """🔥 *Full Body Funcional*
 
 1. Thrusters (sentadilla + press) – 4x10  
 2. Swing con kettlebell o mancuerna – 3x15  
@@ -147,14 +147,14 @@ def generar_rutina(usuario):
 4. Escaladores – 3x30 seg  
 ⏱️ *Descanso:* 45-60 seg""",
 
-    "sábado": """🧘 *Estiramientos + Core*
+ "sábado" """🧘 *Estiramientos + Core*
 
 1. Estiramiento dinámico de cuerpo completo – 10 min  
 2. Plancha lateral – 3x30 seg por lado  
 3. Crunch bicicleta – 3x20  
 4. Estiramientos pasivos finales – 5 min""",
 
-    "domingo": """🚶‍♂️ *Descanso activo*
+ "domingo" """🚶‍♂️ *Descanso activo*
 
 Recomendado:  
 – Caminata ligera 30-45 min  
