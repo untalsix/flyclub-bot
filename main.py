@@ -107,7 +107,7 @@ def generar_rutina(usuario):
             "intermedio": [
                 
 
-"lunes" """💥 *Pecho + Tríceps*
+"Lunes" """💥 *Pecho + Tríceps*
 
 1. Press banca plano – 4x10  
 2. Aperturas con mancuernas – 4x12  
@@ -115,7 +115,7 @@ def generar_rutina(usuario):
 4. Press cerrado – 3x10  
 ⏱️ *Descanso:* 60-90 seg""",
 
- "martes" """🦵 *Piernas*
+ "Martes" """🦵 *Piernas*
 
 1. Sentadilla con barra – 4x10  
 2. Prensa de piernas – 4x12  
@@ -123,7 +123,7 @@ def generar_rutina(usuario):
 4. Elevación de talones – 4x20  
 ⏱️ *Descanso:* 60 seg""",
 
-"miércoles" """🏃‍♂️ *Cardio + Core*
+"Miércoles" """🏃‍♂️ *Cardio + Core*
 
 1. Bicicleta o caminadora – 10 min  
 2. Crunch abdominal – 4x20  
@@ -131,7 +131,7 @@ def generar_rutina(usuario):
 4. Elevación de piernas – 4x15  
 ⏱️ *Descanso:* 30-45 seg""",
 
- "jueves" """💪 *Espalda + Bíceps*
+ "Jueves" """💪 *Espalda + Bíceps*
 
 1. Jalón al pecho – 4x10  
 2. Remo con barra – 4x12  
@@ -139,7 +139,7 @@ def generar_rutina(usuario):
 4. Curl martillo – 3x10  
 ⏱️ *Descanso:* 60-90 seg""",
 
-"viernes" """🔥 *Full Body Funcional*
+"Viernes" """🔥 *Full Body Funcional*
 
 1. Thrusters (sentadilla + press) – 4x10  
 2. Swing con kettlebell o mancuerna – 3x15  
@@ -147,14 +147,14 @@ def generar_rutina(usuario):
 4. Escaladores – 3x30 seg  
 ⏱️ *Descanso:* 45-60 seg""",
 
- "sábado" """🧘 *Estiramientos + Core*
+ "Sábado" """🧘 *Estiramientos + Core*
 
 1. Estiramiento dinámico de cuerpo completo – 10 min  
 2. Plancha lateral – 3x30 seg por lado  
 3. Crunch bicicleta – 3x20  
 4. Estiramientos pasivos finales – 5 min""",
 
- "domingo" """🚶‍♂️ *Descanso activo*
+ "Domingo" """🚶‍♂️ *Descanso activo*
 
 Recomendado:  
 – Caminata ligera 30-45 min  
@@ -165,9 +165,63 @@ Recomendado:
 
             "avanzado": [
 
-                "Hipertrofia avanzada: 5x8 en superseries de empuje y tracción",
+"Lunes" """🔥 *Pecho + Tríceps (Hipertrofia)*
 
-                "Fuerza máxima: 5x5 peso muerto + press militar"
+1. Press banca con barra – 5x8  
+2. Press inclinado con mancuernas – 4x10  
+3. Aperturas en polea – 4x12  
+4. Fondos lastrados – 3x8  
+5. Rompecráneos – 3x10  
+⏱️ *Descanso:* 60-90 seg""",
+
+    "Martes" """🦵 *Piernas (Fuerza + Volumen)*
+
+1. Sentadilla profunda – 5x5  
+2. Peso muerto rumano – 4x8  
+3. Prensa inclinada – 4x10  
+4. Curl femoral acostado – 3x12  
+5. Elevaciones de talones en máquina – 4x20  
+⏱️ *Descanso:* 60-90 seg""",
+
+    "Miércoles" """💨 *HIIT + Core*
+
+1. Sprint 30 seg / trote 90 seg – 8 rondas  
+2. Crunch en polea alta – 4x20  
+3. Plancha con desplazamiento – 4x45 seg  
+4. Russian twists con peso – 4x20  
+⏱️ *Descanso:* 30-45 seg""",
+
+    "Jueves" """💪 *Espalda + Bíceps (Volumen)*
+
+1. Dominadas lastradas – 4x8  
+2. Remo con barra – 5x10  
+3. Jalón en polea cerrada – 4x12  
+4. Curl con barra Z – 4x10  
+5. Curl concentrado – 3x12  
+⏱️ *Descanso:* 60-90 seg""",
+
+    "Viernes" """🧱 *Full Body – Potencia*
+
+1. Power Clean o Clean & Press – 5x5  
+2. Burpees con salto alto – 4x12  
+3. Swing con kettlebell – 4x15  
+4. Thrusters – 4x10  
+⏱️ *Descanso:* 60-90 seg""",
+
+    "Sábado" """🧘 *Movilidad + Estiramientos + Core*
+
+1. Estiramientos dinámicos – 10 min  
+2. Bird-dog – 3x20  
+3. Elevaciones de piernas – 3x20  
+4. Foam rolling en espalda, glúteos y piernas – 10 min  
+⏱️ *Descanso libre*""",
+
+    "Domingo" """🚶‍♂️ *Descanso Activo*
+
+– Caminata ligera o bici 45 min  
+– Estiramientos suaves  
+– Hidratación y buena alimentación  
+⏱️ *Tu cuerpo también entrena descansando*"""
 
             ]
 
