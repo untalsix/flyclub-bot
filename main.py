@@ -231,25 +231,195 @@ Recomendado:
 
             "principiante": [
 
-                "Trote suave 3 km + estiramientos",
+"Lunes" """🏃‍♂️ *Easy Run + Técnica*
 
-                "Fartlek ligero: 30 seg rápido / 90 seg trote x 5"
+- Duración total: 30 minutos  
+- 5 min caminata rápida (calentamiento)  
+- 20 min trote suave (ritmo cómodo, puedes hablar sin agitarte)  
+- 5 min de ejercicios técnicos:  
+  - Skipping alto (3x20 seg)  
+  - Talones a glúteo (3x20 seg)  
+⏱️ Descanso entre ejercicios: 30 seg""",
+
+    "Martes" """🔥 *Fartlek Básico*
+
+- Duración total: 25 minutos  
+- 5 min caminata rápida (calentamiento)  
+- Fartlek: 1 min rápido / 2 min trote x 5 rondas  
+- 5 min caminata para enfriar  
+💡 Corre rápido ≠ sprint, busca ritmo fuerte sostenible  
+⏱️ Descanso activo: trote suave""",
+
+    "Miércoles" """🧘‍♂️ *Recuperación Activa + Core*
+
+- Caminata ligera 30 min o bicicleta suave  
+- Core (3 rondas):  
+  1. Plancha 30 seg  
+  2. Crunch abdominal 20 rep  
+  3. Elevación de piernas 15 rep  
+⏱️ Descanso entre ejercicios: 30 seg""",
+
+    "Jueves" """🏁 *Intervalos Cortos*
+
+- Duración total: 30 minutos  
+- 5 min calentamiento (caminata + trote suave)  
+- Intervalos: 30 seg rápido / 90 seg trote x 6 repeticiones  
+- 5 min trote muy suave + estiramientos  
+💡 Enfócate en mantener buena técnica""",
+
+    "Viernes" """💨 *Tempo Run Suave*
+
+- Duración total: 25-30 minutos  
+- 5 min trote suave  
+- 15 min ritmo medio (80% de tu capacidad)  
+- 5-10 min trote para enfriar  
+🎯 Ritmo medio: ya no puedes hablar cómodamente""",
+
+    "Sábado" """🏃‍♀️ *Long Run*
+
+- Duración: 40 minutos  
+- 10 min caminata + trote muy suave  
+- 25 min trote constante (ritmo muy relajado)  
+- 5 min caminata para finalizar  
+💡 Este día es para aumentar resistencia""",
+
+    "Domingo" """🧘 *Descanso Activo + Estiramientos*
+
+- Caminata suave 20-30 minutos  
+- Estiramientos estáticos (piernas, espalda baja, glúteos)  
+- Respiración profunda y relajación  
+😌 Cuerpo y mente también necesitan recuperación"""
 
             ],
 
             "intermedio": [
+                
 
-                "6 km ritmo medio + técnica de carrera",
+"Lunes" """🏃‍♂️ *Easy Run + Técnica*
 
-                "4 km tempo run + 1 km suave"
+- Duración total: 40 minutos  
+- 10 min trote suave (calentamiento)  
+- 25 min trote continuo (ritmo fácil de mantener)  
+- 5 min técnica:  
+  - Skipping (3x30 seg)  
+  - Talones a glúteo (3x30 seg)  
+⏱️ Descanso entre ejercicios: 30 seg""",
+
+    "Martes" """🔥 *Intervalos Progresivos*
+
+- Duración total: 40 minutos  
+- 10 min trote suave (calentamiento)  
+- 6x (1 min rápido / 1 min medio / 1 min trote)  
+- 5 min caminata para enfriar  
+🎯 Ritmo rápido: 85-90%  
+🎯 Ritmo medio: 75-80%""",
+
+    "Miércoles" """🧘‍♂️ *Recuperación Activa + Core*
+
+- Caminata o bici suave: 30 min  
+- Core funcional (3 rondas):  
+  1. Plancha frontal 45 seg  
+  2. Crunch bicicleta 20 rep  
+  3. Elevaciones de piernas 15 rep  
+⏱️ Descanso entre rondas: 45 seg""",
+
+    "Jueves" """🏁 *Tempo Run*
+
+- Duración total: 40 minutos  
+- 10 min trote suave  
+- 20 min ritmo umbral (duro pero sostenible, sin poder hablar)  
+- 10 min trote lento  
+🎯 Ideal para mejorar tolerancia al esfuerzo sostenido""",
+
+    "Viernes" """⛰️ *Fartlek por Tiempo*
+
+- Duración total: 35 minutos  
+- 10 min calentamiento  
+- 5x (2 min rápido / 2 min lento)  
+- 5 min enfriamiento  
+💡 Usa un parque o zona sin semáforos para fluir mejor""",
+
+    "Sábado" """🏃‍♀️ *Long Run Progresivo*
+
+- Duración: 50 minutos  
+- 10 min trote muy suave  
+- 30 min trote continuo  
+- Últimos 10 min: sube el ritmo gradualmente cada 2-3 min  
+🎯 Mejora fondo y tolerancia a fatiga""",
+
+    "Domingo" """🧘 *Descanso o Caminata Suave*
+
+- Caminata ligera 30 min  
+- Estiramientos estáticos (5-10 min)  
+- Movilidad de tobillos, cadera y espalda  
+😌 Día de recuperación activa"""
+                
 
             ],
 
             "avanzado": [
 
-                "8 km intervalado (2 km suave + 4x1 rápido + 2 km)",
 
-                "10 km progresivo (cada 2 km más rápido)"
+ "Lunes" """💨 *Series en pista (velocidad)*
+
+- Calentamiento: 10 min trote suave  
+- Técnica de carrera: skipping y talones 2x30 seg  
+- 6x400m (ritmo muy fuerte)  
+  ⏱️ Descanso entre repeticiones: 90 seg caminando  
+- 10 min trote muy suave para enfriar  
+🎯 Ritmo: 90-95% esfuerzo máximo""",
+
+    "Martes" """🧘‍♂️ *Descanso Activo + Core*
+
+- Caminata ligera o bici suave: 30-40 min  
+- Core avanzado:  
+  1. Plancha frontal: 1 min  
+  2. Crunch oblicuo cruzado: 3x15  
+  3. Escaladores: 3x40 seg  
+⏱️ Descanso entre ejercicios: 30-45 seg""",
+
+    "Miércoles" """🏁 *Tempo Run Extendido*
+
+- 10 min trote suave  
+- 30 min ritmo tempo (zona de umbral: exigente pero controlado)  
+- 5 min trote suave para enfriar  
+🎯 Ritmo: 85-90% de esfuerzo""",
+
+    "Jueves" """🔥 *Fartlek por bloques*
+
+- Calentamiento: 10 min trote  
+- Bloques:  
+  - 4x (2 min rápido / 1 min trote)  
+  - 3x (3 min fuerte / 1 min trote)  
+  - 2x (1 min explosivo / 1 min trote)  
+- 5 min caminata suave  
+🎯 Ritmo rápido: competitivo, explosivo""",
+
+    "Viernes" """💪 *Cuestas (Fuerza específica)*
+
+- 10 min trote suave  
+- Técnica: skipping + talones 2x30 seg  
+- 8 repeticiones de cuestas de 30-45 seg (pendiente del 5-8%)  
+  ⏱️ Descanso bajando caminando  
+- 5-10 min trote muy suave  
+🎯 Mejora potencia, zancada y técnica""",
+
+    "Sábado" """🦵 *Long Run con ritmo objetivo*
+
+- 70 minutos  
+  - 20 min ritmo suave  
+  - 40 min ritmo medio (zona aeróbica alta)  
+  - 10 min final fuerte, cerca de ritmo de carrera  
+🎯 Ideal para pruebas de 10k o medio maratón""",
+
+    "Domingo" """😌 *Recuperación Total o Movilidad*
+
+- Caminata 20-30 min (opcional)  
+- Rutina de movilidad:  
+  - Estiramientos activos (piernas, cadera, espalda)  
+  - Respiración y relajación  
+🧘 Día para recuperar cuerpo y mente"""
+                
 
             ]
 
@@ -259,25 +429,227 @@ Recomendado:
 
             "principiante": [
 
-                "2 km trote + 3 circuitos de fuerza cuerpo completo",
 
-                "Bike 15 min + abdominales y flexiones 3x15"
+ "Lunes" """🏋️ *Fuerza de Tren Inferior + Core*
+
+1. Sentadilla con barra – 4x8  
+2. Peso muerto rumano – 3x10  
+3. Desplantes caminando con mancuernas – 3x12 por pierna  
+4. Plancha frontal – 3x1 min  
+⏱️ Descanso: 90 seg entre series  
+🎯 Prioriza técnica y control.  
+
+🏃 Finaliza con:  
+- 2 km trote suave  
+- Estiramientos""",
+
+    "Martes" """💥 *Pliometría + Sprint Corto*
+
+1. Calentamiento: 10 min movilidad y trote  
+2. Pliometría:  
+   - Jump Squats – 3x15  
+   - Skater Jumps – 3x12 por lado  
+   - Burpees – 3x10  
+   - Box jumps – 3x8  
+⏱️ Descanso: 45-60 seg entre ejercicios  
+
+🏃 Series de Sprint:  
+- 6x100m al 90% de esfuerzo  
+- Caminata de regreso como descanso""",
+
+    "Miércoles" """💪 *Tren Superior (Push + Pull)*
+
+1. Press banca – 4x10  
+2. Dominadas (o jalón al pecho) – 4x8  
+3. Fondos en paralelas – 3x12  
+4. Remo con barra – 3x10  
+5. Curl bíceps + press militar (superserie) – 3x12  
+
+⏱️ Descanso:  
+- 90 seg entre ejercicios normales  
+- 45 seg en superseries""",
+
+    "Jueves" """🏃 *Running – Tempo + Técnica*
+
+1. Calentamiento: 10 min trote  
+2. Técnica de carrera (skipping, talones) – 2x30 seg  
+3. 20-25 min ritmo tempo (80-85%)  
+4. 5 min trote suave  
+🎯 Mejora eficiencia y control""",
+
+    "Viernes" """🔥 *HIIT + Core explosivo*
+
+1. Circuito HIIT (4 rondas):  
+   - Swing con kettlebell – 30 seg  
+   - Jumping lunges – 30 seg  
+   - Mountain climbers – 30 seg  
+   - Descanso – 30 seg  
+2. Core:  
+   - Crunch en V – 3x20  
+   - Russian twist – 3x30 seg  
+   - Plancha lateral – 3x30 seg por lado  
+
+⏱️ Total: 30-40 min de entrenamiento intenso""",
+
+    "Sábado" """🦿 *Fuerza Explosiva + Fartlek*
+
+🏋️ Fuerza:  
+1. Sentadilla frontal – 4x6  
+2. Hip thrust – 3x10  
+3. Step up con peso – 3x12  
+
+⏱️ Descanso: 90 seg  
+  
+🏃 Fartlek:  
+- 4 bloques:  
+  - 2 min fuerte / 2 min suave  
+  - 1 min fuerte / 1 min trote  
+🎯 Potencia aeróbica + recuperación activa""",
+
+    "Domingo" """😌 *Recuperación y Movilidad*
+
+- Caminata 30 min  
+- Estiramientos de piernas, glúteos, espalda  
+- Movilidad de cadera y tobillo  
+🧘 Respiración y relajación 10 min"""
+
 
             ],
 
             "intermedio": [
 
-                "3 km run + 4x10 ejercicios con peso",
 
-                "Tabata: 4 ejercicios intensos x 20 seg/10 seg"
+"Lunes" """🏋️ *Full Body + Core*
+
+1. Sentadilla con mancuernas – 4x12  
+2. Flexiones completas – 4x10  
+3. Peso muerto con mochila/mancuernas – 4x10  
+4. Russian twists – 3x20  
+⏱️ Descanso: 60 seg entre ejercicios  
+🎯 Trabajo completo de fuerza y abdomen""",
+
+    "Martes" """🏃‍♂️ *Tempo Run + Técnica*
+
+1. Calentamiento – 5 min trote suave  
+2. Tempo Run: 20 min a ritmo moderado constante  
+3. Técnica: skipping alto, talones al glúteo, saltos cortos – 2 rondas  
+4. Enfriamiento – 5 min caminata  
+🎯 Mejora tu resistencia y forma al correr""",
+
+    "Miércoles" """💪 *Pliométricos + Tren Superior*
+
+1. Jump squats – 3x12  
+2. Burpees con paso – 3x10  
+3. Press de hombros – 3x12  
+4. Curl de bíceps – 3x12  
+⏱️ Descanso: 45-60 seg  
+🎯 Potencia y coordinación muscular""",
+                
+
+    "Jueves" """🏋️ *Fuerza de Piernas + Glúteos*
+
+1. Zancadas caminando – 3x10 por pierna  
+2. Prensa o peso muerto rumano – 4x10  
+3. Step ups (con banco o escalón) – 3x12  
+4. Abducción lateral en el suelo – 3x20  
+⏱️ Descanso: 60-75 seg  
+🎯 Enfocado en fuerza funcional""",
+
+    "Viernes" """🔥 *HIIT + Core*
+
+4 rondas (30 seg ON / 15 seg OFF por ejercicio):  
+1. Jumping jacks  
+2. Mountain climbers  
+3. Sentadilla + press  
+4. Plancha tocando hombros  
+⏱️ Descanso: 60 seg entre rondas  
+🎯 Intensidad media-alta, mejora tu VO2""",
+
+    "Sabado" """🧘 *Recuperación Activa*
+
+Opciones:  
+– Caminata ligera 30-40 min  
+– Yoga guiado (15-20 min)  
+– Estiramientos + movilidad  
+🎯 Soltar el cuerpo, evitar sobrecargas""",
+                
 
             ],
 
             "avanzado": [
+                
 
-                "5 km + tren superior en gimnasio",
+  "Lunes" """🔥 *Lunes – Tren Superior + Series Cortas*
+🏋️ *GYM – Push (Pecho, Hombros, Tríceps)*
+1️⃣ Press banca plano – 4x8  
+2️⃣ Press militar con barra – 4x10  
+3️⃣ Fondos – 4x10  
+4️⃣ Elevaciones laterales – 3x12  
+⏱️ Descanso: 60-90 seg entre series
 
-                "Entreno cruzado: HIIT + escaleras + core"
+🏃 *Running – Series velocidad:*  
+6x400 m a ritmo alto  
+⏱️ Recuperación: 90 seg trote entre repeticiones""",
+
+    "Martes" """🦵 *Martes – Tren Inferior + Fartlek*
+🏋️ *GYM – Piernas + Pliométricos*
+1️⃣ Sentadilla frontal – 4x6  
+2️⃣ Peso muerto rumano – 4x8  
+3️⃣ Saltos al cajón – 4x6  
+4️⃣ Desplantes caminando – 3x12 por pierna  
+⏱️ Descanso: 60-90 seg
+
+🏃 *Running – Fartlek:*  
+10x(1 min fuerte / 1 min suave)  
+Duración total: ~25 min""",
+
+    "Miércoles" """🧘 *Miércoles – Core + Rodaje Suave*
+💥 *GYM – Core & movilidad*
+1️⃣ Crunch bicicleta – 3x30 seg  
+2️⃣ Plancha con rotación – 3x30 seg  
+3️⃣ Elevación de piernas – 3x15  
+4️⃣ Estiramientos dinámicos – 10 min  
+⏱️ Descanso: 30-45 seg
+
+🏃 *Running – Easy Run:*  
+30-40 min a ritmo cómodo (Z2)""",
+
+    "Jueves" """💪 *Jueves – Espalda + Bíceps + Tempo Run*
+🏋️ *GYM – Pull Day*
+1️⃣ Dominadas – 4x10  
+2️⃣ Remo con barra – 4x8  
+3️⃣ Curl con mancuernas – 3x12  
+4️⃣ Remo TRX o polea – 3x12  
+⏱️ Descanso: 60-75 seg
+
+🏃 *Running – Tempo Run:*  
+20 min a ritmo umbral + 5 min suave""",
+
+    "Viernes" """🔥 *Viernes – Full Body Funcional + Cuestas*
+🏋️ *GYM – Funcional + fuerza piernas*
+1️⃣ Thrusters – 3x10  
+2️⃣ Swing con kettlebell – 3x15  
+3️⃣ Jump Squats – 3x12  
+4️⃣ Step-ups con mancuernas – 3x10 por pierna  
+⏱️ Descanso: 60 seg
+
+🏃 *Running – Repeats en cuesta:*  
+6x30 seg cuesta a tope + 2 min trote""",
+
+    "Sábado" """🏃 *Sábado – Long Run + Core*
+🏃 *Running – Tirada larga:*  
+60-75 min a ritmo constante (Z2-Z3)
+
+💥 *Post-run Core (opcional):*
+1️⃣ Plancha – 3x1 min  
+2️⃣ Crunch con peso – 3x15  
+3️⃣ Lateral crunch – 3x20 seg por lado""",
+
+    "Domingo" """🧘 *Domingo – Descanso Activo*
+🚶 Caminata ligera o yoga – 30-40 min  
+💨 Respiración, movilidad y foam roller  
+*Consejo:* Hidratación + preparación semana próxima""",
+                
 
             ]
 
