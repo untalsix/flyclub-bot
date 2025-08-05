@@ -1072,7 +1072,13 @@ async def main():
 
     app.add_handler(CallbackQueryHandler(button_handler))
 
+        await application.bot.delete_webhook(drop_pending_updates=True)
 
+        await application.initialize()
+        await application.start()
+        print("✅ Bot corriendo con polling")
+        await application.updater.start_polling()
+        await application.updater.idle()
 
     hora = datetime.strptime("12:00", "%H:%M").time()  # 12:00 UTC ≈ 6:00 a.m. México
 
